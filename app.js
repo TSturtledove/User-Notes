@@ -10,7 +10,7 @@ app.config(function($routeProvider, $locationProvider) {
   })
   .when("/new", {
     controller: "new",
-    templateUrl: "newuser.html"
+    templateUrl: "newnotes.html"
   })
   .when("/login", {
     controller: "log",
@@ -30,41 +30,32 @@ app.config(function($routeProvider, $locationProvider) {
 })
 
 app.controller("front", function($scope) {
-  $scope.potatoes = "baked spuds!"
-  $scope.steak = "dog"
-  $scope.number = 8
-  $scope.arrayThing = [1,2,3,4]
-  $scope.obj = {1: "thing"}
-  $scope.functionThing = function(){
-    console.log("more than you thought")
-  }
-
-
+  $scope.welcome = "Welcome to Notes"
 })
 
 app.controller("new", function($scope) {
-  $scope. =
+  // $scope. =
 })
 
 app.controller("log", function($scope) {
-  $scope. =
+  // $scope. =
 })
 
 app.controller("notes", function($scope) {
-  $scope. =
+  // $scope. =
 })
 
 app.controller("register", function($scope) {
-  $scope. =
+  // $scope. =
 })
-
-app.controller("listcon", function($scope, $http) {
-  console.log("blarg")
-
-  $http.get(`list.json`)
-  .then(function(justAVariableName) {
-    console.log(justAVariableName)
-    $scope.theEarlierVariable = justAVariableName.data.list
-    $scope.theEarlierVariable.push("blarg")
-  })
-})
+//
+// app.controller("listcon", function($scope, $http) {
+//   console.log("blarg")
+//
+//   $http.get(`list.json`)
+//   .then(function(justAVariableName) {
+//     console.log(justAVariableName)
+//     $scope.theEarlierVariable = justAVariableName.data.list
+//     $scope.theEarlierVariable.push("blarg")
+//   })
+// })
